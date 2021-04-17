@@ -332,7 +332,6 @@ if __name__ == "__main__":
                         for num, site in enumerate(instance_list):
                             if num+1 == int(list_num):
                                 near_me = get_nearby_places(site)
-                                print(type(near_me))
                                 for num1, location in enumerate(near_me['searchResults']):
                                     name_loc = location['name']
                                     if location['fields']['group_sic_code_name_ext']:
